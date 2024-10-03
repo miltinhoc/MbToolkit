@@ -9,13 +9,13 @@ namespace Tester
         static void Main(string[] args)
         {
             MalwarebytesManager manager = new MalwarebytesManager();
-            manager.DisableWebProtection();
-            manager.DisableRansomwareProtection();
-            manager.DisableExploitProtection();
-            manager.DisableMalwarePUPProtection();
-            manager.DisableAutoUpdates();
+            //manager.DisableWebProtection();
+            //manager.DisableRansomwareProtection();
+            //manager.DisableExploitProtection();
+            //manager.DisableMalwarePUPProtection();
+            //manager.DisableAutoUpdates();
 
-            manager.KillService();
+            //manager.KillService();
 
             string[] paths = new string[]
             {
@@ -26,7 +26,7 @@ namespace Tester
             };
 
             manager.AddExclusion(ExclusionType.Folder, paths);
-            manager.RemoveNotifications();
+            //manager.RemoveNotifications();
         }
     }
 }
